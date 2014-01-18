@@ -18,7 +18,7 @@ or just the module name
 ```javascript
 var authService = bring("authService");
 ```
-
+*(This project is trying to use [Semantic Versioning](http://semver.org/) and is currently on __v0.1.0__)*
 ## Installation
 
 Just do an ```npm install bring``` then:
@@ -81,7 +81,7 @@ var fs = bring("fs");
 
 (The MIT License)
 
-Copyright (c) 2014 ISMOT Group <support@ismotgroup.com>
+Copyright (c) 2014 ISMOT Group < support@ismotgroup.com >
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
