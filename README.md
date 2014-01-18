@@ -85,7 +85,7 @@ var fs = bring("fs");
 
 (The MIT License)
 
-Copyright (c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
+Copyright (c) 2014 ISMOT Group <support@ismotgroup.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
