@@ -2,9 +2,7 @@
 
 A more natural and intelligent way (as opposed to the default "require" function) to import packages to your code.
 
-
 Instead of doing ```var authService = require("../../services/core/authService");``` you can do any of the following:
-
 
 Assumming services is in your project's **root** directory
 ```javascript
@@ -18,6 +16,7 @@ or just the module name
 ```javascript
 var authService = bring("authService");
 ```
+
 *(This project is trying to use [Semantic Versioning](http://semver.org/) and is currently on __v0.1.0__)*
 ## Installation
 
