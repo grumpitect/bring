@@ -26,10 +26,6 @@ Just do an ```npm install bring``` then:
 var bring       = require("bring");
 var authService = bring("authService");
 ```
-or even better (in your main module) do this: ```global.bring = require("bring");``` and then in any module you can easily do this:
-```javascript
-var authService = bring("authService");
-```
 
 ## Usage
 "bring" supports many natural ways to import your packages. Just type in anything you feel natural to you and it will bring the module you had in mind!
