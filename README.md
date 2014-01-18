@@ -22,7 +22,6 @@ var authService = bring('authService');
 
 ##Installation
 
-###Node
 Just do an ```npm install bring``` then:
 ```
 var bring       = require('bring');
@@ -47,10 +46,10 @@ var authService = bring('/services/core/authService');
 Use double (or more) slashes for the system's root directory (I can't imagine why you would need to do that!)
 
 ```
-var wieredModuleFromOtherLocation = bring('//home/jay/wieredModule');
+var wieredModuleFromOtherLocation = bring('//home/jay/otherLocation/wieredModule');
 ```
 
-Use only the module name you feel like it
+Use only the module name if you feel like it
 
 ```
 var authService = bring('authService');
