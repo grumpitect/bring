@@ -68,7 +68,7 @@ You can always use relative paths like ```"./somePath"``` or ```"../../someOther
 var authService = bring("../../services/core/authService");
 ```
 
-Of course you can always "bring" default node modules or installed modules (in the "node_modules" directory)
+And of course you can always "bring" default node modules or installed modules (in the "node_modules" directory)
 
 ```javascript
 var fs = bring("fs");
