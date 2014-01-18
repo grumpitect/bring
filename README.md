@@ -49,7 +49,7 @@ Use double (or more) slashes for the system's root directory (I can't imagine wh
 var wieredModuleFromOtherLocation = bring('//home/jay/otherLocation/wieredModule');
 ```
 
-Use only the module name if you feel like it
+Use only the module name if you feel like it (It doesn't matter where it is located "bring" will just bring it to you!)
 
 ```
 var authService = bring('authService');
