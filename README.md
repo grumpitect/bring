@@ -34,7 +34,7 @@ var authService = bring("authService");
 ## Usage
 "bring" supports many natural ways to import your packages. Just type in anything you feel natural to you and it will bring the module you had in mind!
 
-### In Application Code
+### Application Code
 
 Use slash as your application's root directory not the system's root (OMG!)
 
