@@ -20,7 +20,7 @@ or just the module name
 var authService = bring("authService");
 ```
 
-##Installation
+## Installation
 
 Just do an ```npm install bring``` then:
 ```javascript
@@ -35,7 +35,7 @@ var authService = bring("authService");
 ## Usage
 "bring" supports many natural ways to import your packages. Just type in anything you feel natural to you and it will bring the module you had in mind!
 
-###In Application Code
+### In Application Code
 
 Use slash as your application's root directory not the system's root (OMG!)
 
@@ -79,7 +79,7 @@ Of course you can always "bring" default node modules or installed modules (in t
 var fs = bring("fs");
 ```
 
-###Test Code
+### Test Code
 "bring" will help you a lot in writing your tests, because test are always in a seperate folder (I hope...) and it is very hard to "require" them with all the nasty relative paths. All you have to do is just using one of the described ways above and forget about all the headaches you had before you knew "bring"! 
 
 ## License
