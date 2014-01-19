@@ -1,7 +1,7 @@
 {
   "name": "bring",
   "version": "0.1.0",
-  "description": "A more natural and intelligent way (as opposed to the default 'require' function) to import packages to your code.",
+  "description": "A more natural and intelligent way (as opposed to the default 'require' function) to import packages to your nodejs application.",
   "main": "./lib/index.js",
   "scripts": {
     "test": "mocha --reporter spec test/**/*.test.js --recursive"
@@ -12,13 +12,15 @@
   },
   "keywords": [
     "bring",
-    "require",
     "absolute",
     "relative",
+    "partial",
     "module",
+    "require",
+    "import",
     "include",
-    "root",
-    "application"
+    "application",
+    "root"
   ],
   "author": {
     "name": "ISMOT Group",

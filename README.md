@@ -1,6 +1,6 @@
 # bring
 
-A more natural and intelligent way (as opposed to the default "require" function) to import packages to your code.
+A more natural and intelligent way (as opposed to the default "require" function) to import packages to your nodejs application.
 
 Instead of doing ```var authService = require("../../services/core/authService");``` you can do any of the following:
 
