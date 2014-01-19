@@ -4,16 +4,16 @@ A more natural and intelligent way (as opposed to the default "require" function
 
 Instead of doing ```var authService = require("../../services/core/authService");``` you can do any of the following:
 
-Assumming services is in your project's **root** directory
-```javascript
+Assuming services is in your project's **root** directory
+```js
 var authService = bring("/services/core/authService");
 ```
 or using a partial path to the module
-```javascript
+```js
 var authService = bring("core/authService");
 ```
 or just the module name
-```javascript
+```js
 var authService = bring("authService");
 ```
 
@@ -21,7 +21,7 @@ var authService = bring("authService");
 ## Installation
 
 Just do an ```npm install bring``` then:
-```javascript
+```js
 var bring       = require("bring");
 var authService = bring("authService");
 ```
@@ -33,48 +33,48 @@ var authService = bring("authService");
 
 Use slash as your application's root directory not the system's root (OMG!)
 
-```javascript
+```js
 var authService = bring("/services/core/authService");
 ```
 
 Use double (or more) slashes for the system's root directory (I can't imagine why you would need to do that!)
 
-```javascript
+```js
 var wieredModuleFromOtherLocation = bring("//home/jay/otherLocation/wieredModule");
 ```
 
 Use only the module name if you feel like it (It doesn't matter where it is located "bring" will just bring it to you!)
 
-```javascript
+```js
 var authService = bring("authService");
 ```
 
 Use a partial path to your module is also possible
 
-```javascript
+```js
 var authService = bring("core/authService");
 ```
 
 Use the folder name if you will (the trailing slash is there just for you to know that it's a directory!)
 
-```javascript
+```js
 var userService = bring("services/user/");
 ```
 
 You can always use relative paths like ```"./somePath"``` or ```"../../someOtherPath"```
 
-```javascript
+```js
 var authService = bring("../../services/core/authService");
 ```
 
 And of course you can always "bring" default node modules or installed modules (in the "node_modules" directory)
 
-```javascript
+```js
 var fs = bring("fs");
 ```
 
 ### Test Code
-"bring" will help you a lot in writing your tests, because test are always in a seperate folder (I hope...) and it is very hard to "require" them with all the nasty relative paths. All you have to do is just using one of the described ways above and forget about all the headaches you had before you knew "bring"! 
+"bring" will help you a lot in writing your tests, because test are always in a separate folder (I hope...) and it is very hard to "require" them with all the nasty relative paths. All you have to do is just using one of the described ways above and forget about all the headaches you had before you knew "bring"! 
 
 ## License
 
