@@ -76,6 +76,9 @@ var fs = bring("fs");
 ### Test Code
 "bring" will help you a lot in writing your tests, because test are always in a separate folder (I hope...) and it is very hard to "require" them with all the nasty relative paths. All you have to do is just using one of the described ways above and forget about all the headaches you had before you knew "bring"! 
 
+## Inspiration
+nadav-dav's [Rekuire](https://github.com/nadav-dav/rekuire)
+
 ## License
 
 (The MIT License)
