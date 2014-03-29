@@ -17,7 +17,7 @@ or just the module name
 var authService = bring("authService");
 ```
 
-*(This project is trying to use [Semantic Versioning](http://semver.org/) and is currently on __v0.1.1__)*
+*(This project is trying to use [Semantic Versioning](http://semver.org/) and is currently on __v0.1.3__)*
 ## Installation
 
 Just do an ```npm install bring``` then:
