@@ -1,6 +1,6 @@
 {
   "name": "bring",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A more natural and intelligent way (as opposed to the default 'require' function) to import packages to your nodejs application.",
   "main": "./lib/index.js",
   "scripts": {

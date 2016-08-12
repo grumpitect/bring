@@ -17,7 +17,7 @@ or just the module name
 var authService = bring("authService");
 ```
 
-*(This project is trying to use [Semantic Versioning](http://semver.org/) and is currently on __v0.1.3__)*
+*(This project is trying to use [Semantic Versioning](http://semver.org/) and is currently on __v0.1.4__)*
 ## Installation
 
 Just do an ```npm install bring``` then:
@@ -74,7 +74,7 @@ var fs = bring("fs");
 ```
 
 ### Test Code
-"bring" will help you a lot in writing your tests, because test are always in a separate folder (I hope...) and it is very hard to "require" them with all the nasty relative paths. All you have to do is just using one of the described ways above and forget about all the headaches you had before you knew "bring"! 
+"bring" will help you a lot in writing your tests, because test are always in a separate folder (I hope...) and it is very hard to "require" them with all the nasty relative paths. All you have to do is just using one of the described ways above and forget about all the headaches you had before you knew "bring"!
 
 ## Inspiration
 nadav-dav's [Rekuire](https://github.com/nadav-dav/rekuire)
@@ -102,4 +102,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
