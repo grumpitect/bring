@@ -1,1 +1,1 @@
-module.exports = 'user service'
+module.exports = 'user service';

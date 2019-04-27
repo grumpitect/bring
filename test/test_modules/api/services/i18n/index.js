@@ -1,1 +1,1 @@
-module.exports = 'i18n service'
+module.exports = 'i18n service';

@@ -1,1 +1,1 @@
-module.exports = 'cache service'
+module.exports = 'cache service';

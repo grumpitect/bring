@@ -1,62 +1,61 @@
-var chai        = require('chai');
-var expect      = chai.expect;
-var cache       = require('../lib/utilities/cache');
+const { expect } = require('chai');
+const cache = require('../lib/utilities/cache');
 
-describe('cache', function () {
-    it('should be able to store a value and retrieve it back', function () {
-        cache.set('key', 'value');
-        
-        expect(cache.get('key')).to.equal('value');
+describe('cache', () => {
+  it('should be able to store a value and retrieve it back', () => {
+    cache.set('key', 'value');
+
+    expect(cache.get('key')).to.equal('value');
+  });
+
+  it('should be able to work like an object that cached key and values could be set or retrieved via brackets or dot syntax', () => {
+    cache.key = 'value';
+
+    expect(cache.key).to.equal('value');
+    expect(cache.key).to.equal('value');
+  });
+
+  it('should be able to store any type of object', () => {
+    cache.set('user', {
+      name: 'jay',
     });
 
-    it('should be able to work like an object that cached key and values could be set or retrieved via brackets or dot syntax', function () {
-        cache['key'] = 'value';
+    expect(cache.get('user')).to.have.property('name').that.equal('jay');
 
-        expect(cache['key']).to.equal('value');
-        expect(cache.key).to.equal('value');
+    cache.set('add', (a, b) => {
+      return a + b;
     });
 
-    it('should be able to store any type of object', function () {
-        cache.set('user', {
-            name: 'jay'
-        });
+    expect(cache.add(1, 2)).to.equal(3);
+  });
 
-        expect(cache.get('user')).to.have.property('name').that.equal('jay');
+  it('should be able to remove a key from cache', () => {
+    cache.set('user', 'jay');
 
-        cache.set('add', function(a, b){
-            return a + b;
-        });
+    expect(cache.get('user')).to.equal('jay');
 
-        expect(cache.add(1, 2)).to.equal(3);
-    });
+    const value = cache.remove('user');
 
-    it('should be able to remove a key from cache', function () {
-        cache.set('user', 'jay');
+    expect(value).to.equal('jay');
+    expect(cache.get('user')).to.be.not.ok();
+  });
 
-        expect(cache.get('user')).to.equal('jay');
+  it('should be resettable', () => {
+    cache.set('key', 'value');
+    cache.set('user', 'jay');
 
-        var value = cache.remove('user');
-        
-        expect(value).to.equal('jay');
-        expect(cache.get('user')).to.be.not.ok;
-    });
+    expect(cache.get('key')).to.equal('value');
+    expect(cache.get('user')).to.equal('jay');
 
-    it('should be resettable', function () {
-        cache.set('key', 'value');
-        cache.set('user', 'jay');
+    cache.reset();
 
-        expect(cache.get('key')).to.equal('value');
-        expect(cache.get('user')).to.equal('jay');
+    expect(cache.get('key')).to.be.not.ok();
+    expect(cache.get('user')).to.be.not.ok();
+  });
 
-        cache.reset();
+  it('should not allow inner functions to be overridden by keys', () => {
+    cache.set = 'another value';
 
-        expect(cache.get('key')).to.be.not.ok;
-        expect(cache.get('user')).to.be.not.ok;
-    });
-
-    it('should not allow inner functions to be overridden by keys', function () {
-        cache.set = 'another value';
-
-        expect(cache.set).to.not.equal('another function');
-    });
+    expect(cache.set).to.not.equal('another function');
+  });
 });

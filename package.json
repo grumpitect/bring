@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ismotgroup/bring.git"
+    "url": "https://github.com/pinova-company/bring"
   },
   "keywords": [
     "bring",
@@ -22,22 +22,22 @@
     "application",
     "root"
   ],
-  "author": {
-    "name": "ISMOT Group",
-    "email": "support@ismotgroup.com"
-  },
+  "author": "jay <jay@pinova.ir>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ismotgroup/bring/issues"
+    "url": "https://github.com/pinova-company/bring/issues"
   },
-  "homepage": "https://github.com/ismotgroup/bring",
+  "homepage": "https://github.com/pinova-company/bring",
   "devDependencies": {
-    "mocha": "~1.17.0",
     "chai": "~1.8.1",
+    "coffee-script": "~1.6.3",
     "fs-extra": "~0.8.1",
-    "coffee-script": "~1.6.3"
+    "mocha": "^6.1.4",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   },
   "dependencies": {
-    "lodash": "~2.4.1"
+    "lodash": "^4.17.11"
   }
 }

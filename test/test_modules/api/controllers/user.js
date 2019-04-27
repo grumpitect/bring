@@ -1,4 +1,6 @@
-var bring           = require('bring');
-var userService     = bring('../services/user');
+// eslint-disable-next-line
+const bring = require('bring');
 
-module.exports      = 'using ' + userService
+const userService = bring('../services/user');
+
+module.exports = `using ${userService}`;
